@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page">
+    <header class="header">
+        <h1 class="header__title" id="title">freeCodeCamp Survey Form</h1>
+        <p class="header__subtitle" id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <section class="content">
+        <form action="submit" class="form" id="survey-form">
+            <fieldset class="form__fieldset form__fieldset_type_userinfo" form="survey-form">
+                <label for="name" class="form__label" id="name-label" form="survey-form">Name</label>
+                <input type="text" id="name" name="name" class="form__input form__input_type_name" form="survey-form" placeholder="Enter your name" required>
+                <label for="email" class="form__label" id="email-label" form="survey-form" >Email</label>
+                <input type="email" id="email" name="email" class="form__input form__input_type_email" form="survey-form" placeholder="Enter your Email" required>
+                <label for="number" class="form__label" id="number-label" form="survey-form" >Age (optional)</label>
+                <input type="number" id="number" name="number" min="10" max="99" class="form__input form__input_type_number" form="survey-form" placeholder="Enter your age">
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset_type_dropdown" form="survey-form">
+                <label for="dropdown" id="dropdown-label" class="form__label" form="survey-form">Which option best describes your current role?</label>
+                <select class="form__select form__select_type_dropdown" id="dropdown" name="dropdown" form="survey-form">
+                    <option class="form__select-option" value="none" disabled selected>Select current role</option>
+                    <option class="form__select-option" value="student">Student</option>
+                    <option class="form__select-option" value="fullTimeJob">Full Time Job</option>
+                    <option class="form__select-option" value="fullTimeLearner">Full Time Learner</option>
+                    <option class="form__select-option" value="preferNotToSay">Prefer not to say</option>
+                    <option class="form__select-option" value="other">Other</option>
+                </select>
+            </fieldset>
+            <fieldset class="form__fieldset form__fieldset_type_radio" name="recomend">
+                <label for="recomend" class="form__label">Would you recommend freeCodeCamp to a friend?</label>
+                <input type="radio" class="form__input form__input_type_radio" id="radio_definitely" name="radio">
+                <label for="radio_definitely" class="form__label">Definitely</label>
+                <input type="radio" class="form__input form__input_type_radio" id="radio_maybe" name="radio">
+                <label for="radio_maybe" class="form__label">Maybe</label>
+                <input type="radio" class="form__input form__input_type_radio" id="radio_notsure" name="radio">
+                <label for="radio_notsure" class="form__label">Not sure</label>
+            </fieldset>
+        </form>
+    </section>
+</body>
+</html>
